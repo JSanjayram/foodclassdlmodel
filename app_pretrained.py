@@ -156,6 +156,7 @@ def main():
         width: 100vw !important;
         margin: 0 !important;
         padding: 0 !important;
+        opacity: 0.9;
     }
     
     .stApp::before {
