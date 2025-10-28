@@ -179,9 +179,10 @@ def main():
     
     .main .block-container {
         background: rgba(0, 0, 0, 0.6) !important;
-        border-radius: 15px;
-        padding: 1rem;
-        margin: 0.2rem;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        border-radius: 15px !important;
+        padding: 1rem !important;
+        margin: 0.2rem !important;
         width: 100% !important;
         max-width: 100% !important;
     }
