@@ -156,6 +156,7 @@ def main():
         width: 100vw !important;
         margin: 0 !important;
         padding: 0 !important;
+        opacity: 0.4 !important;
     }
     
     .stApp::before {
@@ -177,27 +178,13 @@ def main():
         100% { background-position: 0% 50%; }
     }
     
-    .stApp::after {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4);
-        z-index: 0;
-        pointer-events: none;
-    }
-    
     .main .block-container {
-        background: rgba(0, 0, 0, 0.7) !important;
-        border-radius: 15px !important;
-        padding: 1rem !important;
-        margin: 0.2rem !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+        border-radius: 15px;
+        padding: 1rem;
+        margin: 0.2rem;
         width: 100% !important;
         max-width: 100% !important;
-        position: relative !important;
-        z-index: 2 !important;
     }
     
     .element-container {
