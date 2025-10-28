@@ -177,20 +177,27 @@ def main():
         100% { background-position: 0% 50%; }
     }
     
-    .main .block-container,
-    section.main .block-container,
-    [data-testid="stAppViewContainer"] .main .block-container {
-        background: rgba(0, 0, 0, 0.8) !important;
-        background-color: rgba(0, 0, 0, 0.8) !important;
-        backdrop-filter: blur(5px) !important;
-        -webkit-backdrop-filter: blur(5px) !important;
+    .stApp::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+        pointer-events: none;
+    }
+    
+    .main .block-container {
+        background: rgba(0, 0, 0, 0.7) !important;
         border-radius: 15px !important;
         padding: 1rem !important;
         margin: 0.2rem !important;
         width: 100% !important;
         max-width: 100% !important;
         position: relative !important;
-        z-index: 1 !important;
+        z-index: 2 !important;
     }
     
     .element-container {
