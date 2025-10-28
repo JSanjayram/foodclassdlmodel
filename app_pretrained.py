@@ -178,7 +178,7 @@ def main():
     }
     
     .main .block-container {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.6)!important;
         border-radius: 15px;
         padding: 1rem;
         margin: 0.2rem;
@@ -338,7 +338,7 @@ def main():
                             response = requests.get(url)
                             image = Image.open(requests.get(url, stream=True).raw)
                             
-                            st.image(image, caption=food_name, use_column_width=True)
+                            st.image(image, caption=food_name, use_container_width=True)
                             
                             if st.button(f"{food_name}", key=f"classify_{food_name}", use_container_width=True):
                                 st.session_state.selected_food = food_name
@@ -356,7 +356,7 @@ def main():
             with col1:
                 selected_url = sample_images[st.session_state.selected_food]
                 selected_img = Image.open(requests.get(selected_url, stream=True).raw)
-                st.image(selected_img, caption=f"Selected: {st.session_state.selected_food}", use_column_width=True)
+                st.image(selected_img, caption=f"Selected: {st.session_state.selected_food}", use_container_width=True)
             
             with col2:
                 predictions = predict_food_ensemble(st.session_state.selected_image, models)
@@ -385,7 +385,7 @@ def main():
             col1, col2 = st.columns(2)
             with col1:
                 st.subheader("Original Image")
-                st.image(image, use_column_width=True)
+                st.image(image, use_container_width=True)
             
             with col2:
                 st.subheader("Classification Result")
@@ -420,7 +420,7 @@ def main():
                 col1, col2 = st.columns(2)
                 with col1:
                     st.subheader("Image from URL")
-                    st.image(image, use_column_width=True)
+                    st.image(image, use_container_width=True)
                 
                 with col2:
                     st.subheader("Classification Result")
