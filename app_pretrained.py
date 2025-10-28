@@ -167,7 +167,7 @@ def main():
         height: 100%;
         background-size: 400% 400%;
         animation: shimmer 3s ease-in-out infinite;
-        background-color:rgba(0, 0, 0, 0.5); 
+        background-color:rgba(0, 0, 0, 0.5) !important; 
         z-index: -1;
     }
     
