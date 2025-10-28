@@ -178,7 +178,7 @@ def main():
     }
     
     .main .block-container {
-        background: rgba(0, 0, 0, 0.6)!important;
+        background: rgba(0, 0, 0, 0.6) !important;
         border-radius: 15px;
         padding: 1rem;
         margin: 0.2rem;
