@@ -156,7 +156,6 @@ def main():
         width: 100vw !important;
         margin: 0 !important;
         padding: 0 !important;
-        opacity: 0.4 !important;
     }
     
     .stApp::before {
@@ -179,7 +178,7 @@ def main():
     }
     
     .main .block-container {
-        background: rgba(255, 255, 255, 0.9) !important;
+        background: rgba(0, 0, 0, 0.6) !important;
         border-radius: 15px;
         padding: 1rem;
         margin: 0.2rem;
